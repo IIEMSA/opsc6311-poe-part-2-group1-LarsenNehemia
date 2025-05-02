@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CB342"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/startDateInput"
+        android:layout_width="378dp"
+        android:layout_height="74dp"
+        android:hint="Start Date (yyyy-mm-dd)" />
+
+    <EditText
+        android:id="@+id/endDateInput"
+        android:layout_width="375dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:hint="End Date (yyyy-mm-dd)" />
+
+    <Button
+        android:id="@+id/filterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Show Summary" />
+
+    <ListView
+        android:id="@+id/summaryListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

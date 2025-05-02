@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CB342">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Expense Entry"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/dateInput"
+            android:layout_width="385dp"
+            android:layout_height="76dp"
+            android:hint="Date (e.g. 2025-05-02)"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/startTimeInput"
+            android:layout_width="378dp"
+            android:layout_height="70dp"
+            android:hint="Start Time (e.g. 10:00 AM)" />
+
+        <EditText
+            android:id="@+id/endTimeInput"
+            android:layout_width="380dp"
+            android:layout_height="66dp"
+            android:hint="End Time (e.g. 12:00 PM)" />
+
+        <EditText
+            android:id="@+id/descriptionInput"
+            android:layout_width="375dp"
+            android:layout_height="69dp"
+            android:hint="Description" />
+
+        <EditText
+            android:id="@+id/categoryInput"
+            android:layout_width="385dp"
+            android:layout_height="68dp"
+            android:hint="Category" />
+
+        <Button
+            android:id="@+id/uploadPhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:text="Upload Photo (Optional)"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/expenseImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <Button
+            android:id="@+id/saveExpenseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:text="Save Expense"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
+

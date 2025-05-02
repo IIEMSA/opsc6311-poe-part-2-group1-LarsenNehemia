@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CB342"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/signupUsername"
+        android:layout_width="373dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter New Username" />
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="369dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Enter New Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signupSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/backToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Back to Login" />
+</LinearLayout>
